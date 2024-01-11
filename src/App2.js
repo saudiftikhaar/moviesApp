@@ -1,7 +1,7 @@
-// src/App.js
+
 import React, { useState } from 'react';
 import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.min.css'; // or import 'tailwindcss/tailwind.css'; if using Tailwind
+import 'bootstrap/dist/css/bootstrap.min.css';  
 
 function App() {
   const [genre, setGenre] = useState('');
@@ -9,7 +9,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const apiKey = '20f83df4badbb59437e4c78af7ca93cb'; // Replace with your movie database API key
+  const apiKey = '20f83df4badbb59437e4c78af7ca93cb'; 
 
   const fetchMovies = async () => {
     try {
